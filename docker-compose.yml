@@ -5,6 +5,7 @@ services:
     container_name: xgl
     hostname: xgl
     image: ghcr.io/4minus1d/vastai-docker-nvidia-glx-desktop:latest
+    runtime: nvidia
     ports:
       - '8080:8080'
       - '3478:3478'
