@@ -1,5 +1,7 @@
 # docker-nvidia-glx-desktop
 
+This is my attempt to create a vast.ai friendly nvidia-glx-desktop that includes a dynamic TURN server.
+
 KDE Plasma Desktop container designed for Kubernetes, supporting OpenGL EGL and GLX, Vulkan, and Wine/Proton for NVIDIA GPUs through WebRTC and HTML5, providing an open-source remote cloud/HPC graphics or game streaming platform. Spawns its own fully isolated X.Org X11 Server instead of using the host X Server, not requiring `/tmp/.X11-unix` host sockets or host configuration.
 
 Use [docker-nvidia-egl-desktop](https://github.com/selkies-project/docker-nvidia-egl-desktop) for a KDE Plasma Desktop container which directly accesses NVIDIA (and unofficially Intel and AMD) GPUs without using an X.Org X11 Server, supports sharing one GPU with many containers, supports [Apptainer](https://github.com/apptainer/apptainer)/[Singularity](https://github.com/sylabs/singularity), and automatically falling back to software acceleration in the absence of GPUs (but with lower graphics performance).
