@@ -12,7 +12,7 @@ on:
     branches: [ main ]
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: 4minus1d/Vastai-docker-nvidia-glx-desktop
+  IMAGE_NAME: 4minus1d/vastai-docker-nvidia-glx-desktop
 jobs:
   build:
     name: Build and push Ubuntu ${{ matrix.os_version }}
